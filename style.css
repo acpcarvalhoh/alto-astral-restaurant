@@ -141,7 +141,7 @@ main ul li {
     font-size: 2rem;
 }
 
-.drink-contet h3{
+.drink-content h3{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     color: #5d5252;
@@ -163,7 +163,7 @@ main ul li {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: block;
     color: #32CF52;
     margin-top: 2.4rem;
@@ -246,25 +246,21 @@ main ul li {
 }
 
 
-.drink-contet{
+.drink-content{
     width: 100%;
 }
-
-
 
 
 .jar{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .juice-description .jar-content{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: space-between;
-    width: 100%;
 }
 
 .juice-container{
@@ -273,9 +269,28 @@ main ul li {
     align-items: center;
 }
 
+.juice-container p {
+    color: #867b7b;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 3px;
+}
+
+.juice-container span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6rem;
+    display: block;
+    color: #32CF52;
+    margin-top: 2.4rem;
+}
+
 .img-drink {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     border: 1px solid #C4C4C4;
