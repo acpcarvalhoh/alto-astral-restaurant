@@ -95,6 +95,7 @@ section{
     margin-bottom: 1.6rem;
 }
 
+
 section h2{
     color: #6f6565;
     margin-bottom: 2.6rem;
@@ -200,6 +201,10 @@ main ul li {
     justify-content: space-between;
     border-bottom: 1px solid #C4C4C4;
     padding-bottom: 5px;
+}
+
+.cup.no-boder{
+    border-bottom: none;
 }
 
 .cup-description{
