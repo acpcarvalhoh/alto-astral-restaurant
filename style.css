@@ -257,18 +257,22 @@ main ul li {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .juice-description .jar-content{
     display: flex;
-    gap: 5.5rem;
+    gap: 2rem;
     justify-content: space-between;
+    border: 1px solid blue;
+    flex-grow: 1;
+    
 }
 
 .juice-container{
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
+    width: 100%;
 }
 
 .juice-container p {
