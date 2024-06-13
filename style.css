@@ -163,7 +163,8 @@ main ul li {
     font-style: normal;
     font-size: 1.4rem;
     display: block;
-    color: rgb(110,119,129);
+    /* color: rgb(110,119,129); */
+    color: #01c65a;
     margin-top: 2.4rem;
     
 }
@@ -225,7 +226,8 @@ main ul li {
     font-style: normal;
     font-size: 1.4rem;
     display: block;
-    color: rgb(110,119,129);
+    /* color: rgb(110,119,129); */
+    color: #01c65a;
     margin-top: 2.4rem;
 }
 
@@ -292,7 +294,8 @@ main ul li {
     font-style: normal;
     font-size: 1.6rem;
     display: block;
-    color: rgb(110,119,129);
+    /* color: rgb(110,119,129); */
+    color: #01c65a;
     margin-top: 2.4rem;
 }
 
