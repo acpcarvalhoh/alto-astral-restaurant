@@ -152,7 +152,7 @@ main ul li {
     color: #867b7b;
     font-family: Roboto;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 160%;
     margin-top: 3px;
 }
@@ -161,9 +161,9 @@ main ul li {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: block;
-    color: #32CF52;
+    color: rgb(110,119,129);
     margin-top: 2.4rem;
     
 }
@@ -223,9 +223,9 @@ main ul li {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: block;
-    color: #32CF52;
+    color: rgb(110,119,129);
     margin-top: 2.4rem;
 }
 
@@ -292,7 +292,7 @@ main ul li {
     font-style: normal;
     font-size: 1.6rem;
     display: block;
-    color: #32CF52;
+    color: rgb(110,119,129);
     margin-top: 2.4rem;
 }
 
