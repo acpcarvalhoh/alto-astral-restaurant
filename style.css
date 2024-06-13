@@ -64,6 +64,7 @@ nav.fixed {
     
 }
 
+
 .carousel-items li.active {
     background: rgb(48, 51, 60);
     border: 1px solid rgb(243, 245, 247);;
@@ -91,14 +92,12 @@ nav.fixed {
     white-space: nowrap;
 }
 
-section{
-    margin-bottom: 1.6rem;
-}
 
 
 section h2{
     color: #6f6565;
-    margin-bottom: 2.6rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.7rem;
     font-size: 2rem;
     font-weight: 600;
     margin-left: 1.6rem;
@@ -107,17 +106,15 @@ section h2{
 @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translateY(0);
+      transform: translateY(20px);
     }
     100% {
       opacity: 1;
-     
-      transform: translateY(-20px);
+      transform: translateY(0);
     }
 }
 
   
-
 main ul li {
     display: flex;
     border-bottom: 1px solid #C4C4C4;
