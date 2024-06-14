@@ -44,7 +44,7 @@ function updateCarousel() {
 
       if (carouselCell) {
           if (scrollPosition >= top && scrollPosition < top + height) {
-              flkty.select(index  - 1);
+              flkty.select(index);
               carouselCell.classList.add('active');
           } else {
               carouselCell.classList.remove('active');
