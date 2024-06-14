@@ -20,7 +20,7 @@ document.addEventListener('scroll', function() {
 
 function updateCarousel() {
   const sections = document.querySelectorAll('section[id]');
-  const scrollPosition = window.scrollY + 100;
+  const scrollPosition = window.scrollY + 95;
 
   sections.forEach((section, index) => {
       const top = section.offsetTop;
@@ -30,7 +30,7 @@ function updateCarousel() {
 
       if (carouselCell) {
           if (scrollPosition >= top && scrollPosition < top + height) {
-              flkty.select(index  + 1);
+              flkty.select(index  - 1);
               carouselCell.classList.add('active');
           } else {
               carouselCell.classList.remove('active');
