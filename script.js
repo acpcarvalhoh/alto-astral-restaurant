@@ -20,7 +20,7 @@ document.addEventListener('scroll', function() {
 
 function updateCarousel() {
   const sections = document.querySelectorAll('section[id]');
-  const scrollPosition = window.scrollY;
+  const scrollPosition = window.scrollY + 95;
 
   sections.forEach((section, index) => {
       const top = section.offsetTop;
