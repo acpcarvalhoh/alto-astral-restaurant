@@ -50,6 +50,10 @@ nav.fixed {
     object-fit: cover;
 }
 
+nav ul{
+    border: 1px solid red;
+}
+
 
 .carousel-container{
     overflow: hidden;
