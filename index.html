@@ -4,57 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&family=Roboto:wght@100;400;500;700;900&display=swap" 
-        rel="stylesheet"
-    >
-    <link rel="stylesheet" 
-        href="path-to-the-file/splide.min.css"
-    >
-    <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    >
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
-    
-    <script>
-        document.addEventListener( 'DOMContentLoaded', function() {
-          var splide = new Splide( '.splide' );
-          splide.mount();
-        } );
-
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Auto Astral</title>
+    
 </head>
 <body>
     <header>
         <div class="logo">
             LOGO
         </div>
-        <nav class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track carousel-container">
-                <ul class="splide__list carousel-items">
-                    <li class="splide__slide active">
+        <nav>
+            <div class="carousel-container">
+                <ul class="main-carousel carousel-items" data-flickity='{ "freeScroll": true }'>
+                    <li class="carousel-cell active">
                         <a href="#salgado-frito">SALGADO FRITO</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#salgado-assado">SALGADO ASSADO</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#doces">DOCES</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#sucos">SUCOS</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#vitaminas">VITAMINAS</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#bebidas">BEBIDAS</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#cafes">CAFÉS</a>
                     </li>
-                    <li class="splide__slide">
+                    <li class="carousel-cell">
                         <a href="#sucos-detox">SUCOS DETOX</a>
                     </li>
                 </ul>
@@ -220,7 +204,7 @@
                     <div class="food-content">
                         <h3>Enroladinho de Salsicha</h3>
                         <p>
-                            Enroladinho irresistível com salsicha, envolta em uma massa maciae dourada, perfeito para qualquer ocasião.
+                            Enroladinho irresistível com salsicha, envolta em uma massa macia e dourada, perfeito para qualquer ocasião.
                         </p>
                         <span>R$ 6,00</span>
                     </div>
@@ -650,7 +634,7 @@
     
                 <li>
                     <div class="drink-content">
-                        <h3>SUCO DE MARACUJA</h3>
+                        <h3>SUCO DE MARACUJÁ</h3>
                         <div class="juice-description">
                             <div class="cup">
                                 <div class="cup-description">
@@ -2283,5 +2267,18 @@
         </section>
     </main>
 </body>
+ <!-- Include Flickity JS -->
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+ <!-- Initialize Flickity -->
+ <script>
+   var elem = document.querySelector('.main-carousel');
+   var flkty = new Flickity(elem, {
+     freeScroll: true,
+     contain: true,
+     prevNextButtons: false,
+     pageDots: false
+   });
+ </script>
 <script src="./script.js"></script>
 </html>

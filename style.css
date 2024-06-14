@@ -54,27 +54,31 @@ nav.fixed {
     width: 100%;
 }
 
-.carousel-items{
-    display: flex;
+.main-carousel{
+    display: grid;
+    width: 100%;
     gap: 8px;
     list-style-type: none;
-    padding: 3rem 1.6rem;
+    padding: 3rem 1rem;
     align-items: flex-start;
-    transition: transform 0.5s ease;    
+    transition: transform 0.5s ease;
 }
 
+.main-carousel li {
+    margin-right: 8px;
+}
 
-.carousel-items li.active {
+.main-carousel li.active {
     background: rgb(48, 51, 60);
     border: 1px solid rgb(243, 245, 247);;
 }
   
-.carousel-items  li.active a{
+.main-carousel li.active a{
     color: #FFFDFD;
 }
 
 
-.carousel-items li{
+.main-carousel .carousel-cell{
     padding: 4px 12px;
     border-radius: 6px;
     border: 1px solid rgb(48, 51, 60);
@@ -82,11 +86,14 @@ nav.fixed {
     background-color: rgb(243, 245, 247);
     flex-grow: 0;
     cursor: pointer;
+    counter-increment: gallery-cell;
    
 }
 
+  
 
-.carousel-items li a{
+
+.main-carousel li a{
     color: rgb(48, 51, 60);
     white-space: nowrap;
 }
