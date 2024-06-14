@@ -32,6 +32,35 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
+
+
+/*
+const navLinkEls = document.querySelectorAll(".carousel-cell a");
+const sectionEls = document.querySelectorAll("section");
+
+let currentSection = "salgado-frito";
+
+window.addEventListener("scroll", () => {
+  sectionEls.forEach((section) => {
+    if (window.scrollY >= (section.offsetTop - 100)) {
+      currentSection = section.id;
+    }
+  });
+
+  navLinkEls.forEach(navLinkEl => {
+    if (navLinkEl.href.includes(currentSection)) {
+      const activeLink = document.querySelector(".carousel-cell.active");
+      if (activeLink) {
+        activeLink.classList.remove("active");
+      }
+      navLinkEl.closest(".carousel-cell").classList.add("active");
+    }
+  });
+});
+
+*/
+
+
 function updateCarousel() {
   const sections = document.querySelectorAll('section[id]');
   const scrollPosition = window.scrollY + 100;
