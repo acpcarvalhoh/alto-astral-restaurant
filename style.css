@@ -50,22 +50,12 @@ nav.fixed {
     object-fit: cover;
 }
 
-.splide__arrow{
-    display: none ;
-}
-
-.splide{
-    height: 10rem;
-}
 
 .carousel-container{
     overflow: hidden;
     width: 100%;
 }
 
-.main-carousel{
-
-}
 
 .carousel-intems{
     display: grid;
