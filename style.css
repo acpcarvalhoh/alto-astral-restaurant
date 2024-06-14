@@ -59,6 +59,10 @@ nav.fixed {
 }
 
 .main-carousel{
+
+}
+
+.carousel-intems{
     display: grid;
     width: 100%;
     gap: 8px;
@@ -68,21 +72,21 @@ nav.fixed {
     transition: transform 0.5s ease;
 }
 
-.main-carousel li {
+.carousel-intems li {
     margin-right: 8px;
 }
 
-.main-carousel li.active {
+.carousel-intems li.active {
     background: rgb(48, 51, 60);
     border: 1px solid rgb(243, 245, 247);;
 }
   
-.main-carousel li.active a{
+.carousel-intems li.active a{
     color: #FFFDFD;
 }
 
 
-.main-carousel .carousel-cell{
+.carousel-intems .carousel-cell{
     padding: 4px 12px;
     border-radius: 6px;
     border: 1px solid rgb(48, 51, 60);
@@ -97,7 +101,7 @@ nav.fixed {
   
 
 
-.main-carousel li a{
+.carousel-intems li a{
     color: rgb(48, 51, 60);
     white-space: nowrap;
 }
