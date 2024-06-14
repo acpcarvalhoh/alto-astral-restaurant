@@ -33,59 +33,36 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 
-
-/*
-const navLinkEls = document.querySelectorAll(".carousel-cell a");
-const sectionEls = document.querySelectorAll("section");
-
-let currentSection = "salgado-frito";
-
-window.addEventListener("scroll", () => {
-  sectionEls.forEach((section) => {
-    if (window.scrollY >= (section.offsetTop - 100)) {
-      currentSection = section.id;
-    }
-  });
-
-  navLinkEls.forEach(navLinkEl => {
-    if (navLinkEl.href.includes(currentSection)) {
-      const activeLink = document.querySelector(".carousel-cell.active");
-      if (activeLink) {
-        activeLink.classList.remove("active");
-      }
-      navLinkEl.closest(".carousel-cell").classList.add("active");
-    }
-  });
-});
-
-*/
-
-
 function updateCarousel() {
   const sections = document.querySelectorAll('section[id]');
   const scrollPosition = window.scrollY + 100;
+  let anyActive = false;
 
   sections.forEach((section, index) => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const session = section.getAttribute('id');
-      const carouselCell = document.querySelector(`.carousel-cell[data-session="${session}"]`);
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+    const session = section.getAttribute('id');
+    const carouselCell = document.querySelector(`.carousel-cell[data-session="${session}"]`);
 
-      if (carouselCell) {
-          if (scrollPosition >= top && scrollPosition < top + height) {
-              flkty.select(index);
-              carouselCell.classList.add('active');
-          } else {
-              carouselCell.classList.remove('active');
-          }
+    if (carouselCell) {
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        flkty.select(index);
+        carouselCell.classList.add('active');
+        anyActive = true;
+      } else {
+        carouselCell.classList.remove('active');
       }
+    }
   });
-}
 
+  if (!anyActive) {
+    flkty.select(0);
+    document.querySelector('.carousel-cell').classList.add('active');
+  }
+}
 
 window.addEventListener('scroll', updateCarousel);
 
-window.addEventListener('load', updateCarousel);
 
 
 
