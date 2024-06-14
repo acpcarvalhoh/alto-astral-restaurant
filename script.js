@@ -18,9 +18,23 @@ document.addEventListener('scroll', function() {
   }
 });
 
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      window.scrollTo({
+          top: targetElement.offsetTop - 95,
+          behavior: 'smooth'
+      });
+  });
+});
+
 function updateCarousel() {
   const sections = document.querySelectorAll('section[id]');
-  const scrollPosition = window.scrollY + 95;
+  const scrollPosition = window.scrollY + 100;
 
   sections.forEach((section, index) => {
       const top = section.offsetTop;
