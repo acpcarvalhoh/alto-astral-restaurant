@@ -54,7 +54,6 @@ nav ul{
     border: 1px solid red;
 }
 
-
 .carousel-container{
     overflow: hidden;
     width: 100%;
@@ -62,6 +61,7 @@ nav ul{
 
 .main-carousel{
     height: 100%;
+    padding: 0;
 }
 
 
@@ -83,6 +83,7 @@ nav ul{
 .carousel-intems li.active {
     background: rgb(48, 51, 60);
     border: 1px solid rgb(243, 245, 247);;
+    margin-bottom: 0rem;
 }
   
 .carousel-intems li.active a{
@@ -99,7 +100,8 @@ nav ul{
     flex-grow: 0;
     cursor: pointer;
     counter-increment: gallery-cell;
-   
+    background: red;
+    margin-bottom: 0.5rem;
 }
 
   
