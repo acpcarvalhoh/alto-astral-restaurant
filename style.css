@@ -50,9 +50,6 @@ nav.fixed {
     object-fit: cover;
 }
 
-nav ul{
-    border: 1px solid red;
-}
 
 .carousel-container{
     overflow: hidden;
@@ -100,7 +97,6 @@ nav ul{
     flex-grow: 0;
     cursor: pointer;
     counter-increment: gallery-cell;
-    background: red;
     margin-bottom: 0.5rem;
 }
 
