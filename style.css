@@ -56,6 +56,10 @@ nav.fixed {
     width: 100%;
 }
 
+.main-carousel{
+    height: 100%;
+}
+
 
 .carousel-intems{
     display: grid;
@@ -100,6 +104,9 @@ nav.fixed {
     white-space: nowrap;
 }
 
+#final-index{
+    height: 50px;
+}
 
 
 section h2{
