@@ -18,4 +18,31 @@ document.addEventListener('scroll', function() {
   }
 });
 
+function updateCarousel() {
+  const sections = document.querySelectorAll('section[id]');
+  const scrollPosition = window.scrollY;
+
+  sections.forEach((section, index) => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const session = section.getAttribute('id');
+      const carouselCell = document.querySelector(`.carousel-cell[data-session="${session}"]`);
+
+      if (carouselCell) {
+          if (scrollPosition >= top && scrollPosition < top + height) {
+              flkty.select(index);
+              carouselCell.classList.add('active');
+          } else {
+              carouselCell.classList.remove('active');
+          }
+      }
+  });
+}
+
+
+window.addEventListener('scroll', updateCarousel);
+
+window.addEventListener('load', updateCarousel);
+
+
 
