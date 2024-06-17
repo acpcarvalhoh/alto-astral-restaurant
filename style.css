@@ -165,6 +165,72 @@ main ul li {
 }
 
 
+.juice-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+
+.juice-description-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+}   
+
+
+.juice-price-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(243, 245, 247, 0.753);
+    border-radius: 5px  12px;
+    padding: 1px 10px;
+}
+
+.juice-price-content p{
+    color: #867b7b;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 3px;
+}
+
+.juice-price-content span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.4rem;
+    display: block;
+    /* color: rgb(110,119,129); */
+    color: #01c65a;
+}
+
+
+
+.juice-img-content{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.juice-img-content img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    min-height: 100%;
+}
+
+
 .food-content p{
     color: #867b7b;
     font-family: Roboto;
