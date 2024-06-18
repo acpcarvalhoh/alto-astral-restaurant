@@ -1,6 +1,6 @@
 # CARDAPIO DIGITAL
 
-![Estrutura do banco de dados](src/assets/lachonete-banner.png)
+![Banner da lachonete](assets/lachonete-banner.png)
 
 Este é um cardápio digital construído com HTML5, CSS3 e JavaScript para uma melhor esperiência dos clientes da [Lanchonete Alto Astral](https://seusite.com).
 
@@ -11,6 +11,7 @@ As principais tecnologias utilizadas no desenvolvimento desta cardápio são:
 - HTML5
 - CSS3
 - JavaScript
+- Flickity
 
 ## Autor
 
