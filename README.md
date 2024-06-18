@@ -2,7 +2,7 @@
 
 ![Banner da lachonete](assets/lachonete-banner.png)
 
-Este é um cardápio digital construído com HTML5, CSS3 e JavaScript para uma melhor esperiência dos clientes da [Lanchonete Alto Astral](https://seusite.com).
+Este é um cardápio digital construído com HTML5, CSS3 e JavaScript para uma melhor esperiência dos clientes da [Lanchonete Alto Astral](https://www.instagram.com/lanchonetealtoastral).
 
 ## Tecnologias Utilizadas
 
