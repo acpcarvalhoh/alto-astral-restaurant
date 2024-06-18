@@ -1,7 +1,7 @@
 const items = document.querySelectorAll('.list li');
 
 items.forEach((item, index) => {
-  item.style.animationDelay = `${index * 0.2}s`;
+  item.style.animationDelay = `${index * 0.1}s`;
 });
 
 document.addEventListener('scroll', function() {
